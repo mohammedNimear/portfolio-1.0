@@ -169,9 +169,10 @@ span{
 }
 
 .home-text h4{
-    color: #ffffff;
     letter-spacing: 2px;
     font-size: 20px;
+    text-transform: capitalize;
+    margin: 3rem 0;
 }
 
 .newletter form{
@@ -585,6 +586,10 @@ header.stiky #menu.active span{
         height: 85vh;
     }
 
+    .home-text h1{
+        margin-bottom: 4rem;
+    }
+
     #menu{
         display: initial;
     }
@@ -640,7 +645,6 @@ header.stiky #menu.active span{
 
     .contact{
         grid-template-columns:1fr;
-
     }
 
     .contact-img{
@@ -665,7 +669,7 @@ header.stiky #menu.active span{
     }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 707px) {
    .newletter form {
     width: 330px
 } 
