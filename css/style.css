@@ -19,6 +19,10 @@
    --p-font: 1.1rem;
 }
 
+html {
+    font-family: 'Joan', serif;
+}
+
 body{
     background: var(--bg-color);
     color: var(--text-color);
@@ -206,8 +210,8 @@ span{
 
 .about{
     background: var(--second-bg-color);
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    display: flex;
+    /* grid-template-columns: repeat(2, 2fr); */
     align-items: center;
     grid-gap: 2rem;
 }
@@ -217,7 +221,7 @@ span{
     width: 500px;
     height: auto;
     border-radius: 10px;
-
+    object-fit: cover;
 }
 
 .about-text h2{
@@ -296,10 +300,12 @@ center p{
     padding: 55px 30px;
     cursor: pointer;
     transition: all .35s;
+    text-align: center;
+
 }
 
  i{
-    color: whitesmoke;
+    color: rgb(208, 67, 67);
     margin-bottom: 20px;
     font-size: 2.7rem;
 }
@@ -323,7 +329,7 @@ center p{
 
 
 /*---------------------------------------------------
----------------------services---------------------
+---------------------portfolio---------------------
 -------------------------------------------------- */
 
 .portfolio{
@@ -336,7 +342,12 @@ center p{
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4.5rem;
-    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .box img{
@@ -348,22 +359,34 @@ center p{
     transition: all .30s;
 }
 
-.box p{
+.box a{
     font-size: var(--p-font);
     color: var(--second-color);
     margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.box a:hover {
+    transform: translateY(-4px);
+    color: var(--main-color)
 }
 
 .box h5{
     color: var(--text-color);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 15px;
 
 }
 
 .box img:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
+}
+
+.porto-details {
+    display: flex;
 }
 
 /*---------------------------------------------------
@@ -446,6 +469,8 @@ form textarea{
     background: var(--second-bg-color);
     text-align: center;
     padding: 34px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer p{
@@ -454,7 +479,19 @@ form textarea{
     letter-spacing: 1px;
 }
 
+#footer-social{
+    align-self: self-end;
+}
 
+#footer-social img{
+    width: 40px;
+    margin-left: 1rem;
+    transition: 0.3s;
+}
+
+#footer-social img:hover {
+    transform: translateY(-4px);
+}
 /*................................
 .............HUMBURGER MENU ................
 ............................... */
@@ -588,7 +625,7 @@ header.stiky #menu.active span{
     }
 
     .about{
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
     .about-img {
@@ -626,4 +663,10 @@ header.stiky #menu.active span{
         width: 550px;
         height: auto;
     }
+}
+
+@media (max-width: 990px) {
+   .newletter form {
+    width: 330px
+} 
 }
