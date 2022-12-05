@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
-    <meta name="keywords" content="md, mhn, mohammedkuku, numair, react, html, css, js,node ,expres, ,electron, Redux , bootstrap, sass">
-    <link rel="icon" href="./imgs/icon.png">
-
+    <title>M.Numair Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet" />
+    <meta name="keywords"
+        content="md, mhn, mohammedkuku, numair, react, html, css, js,node ,expres, ,electron, Redux , bootstrap, sass" />
+    <link rel="icon" href="./imgs/icon.png" />
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -21,8 +22,9 @@
     ----------------------HEADER----------------------
     -------------------------------------------------->
     <header>
-        <a href="#" class="logo">Portfolio</a>
-
+        <div class="logo">
+            <h2>M.Numear</h2>
+        </div>
         <div class="menu" id="menu">
             <span></span>
             <span></span>
@@ -32,13 +34,11 @@
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li>
-                <a href="#contact"> <span>Contact</span></a>
-            </li>
+            <li><a href="#portfolio">My Works</a></li>
         </ul>
-        <a href="#" class="h-btn">Let's Talk</a>
+        <a href="#contact" class="h-btn">Let's Talk</a>
     </header>
 
     <!------------------------------------------------
@@ -57,7 +57,6 @@
                 </form>
             </div>
         </div>
-        
     </section>
 
     <!------------------------------------------------
@@ -80,7 +79,33 @@
                 professional certificate
             </p>
 
-            <a href="https://drive.google.com/file/d/10WUKlU781aX7CXw9TTRzFqJgySm-dTUc/view" class="btn">Download CV</a>
+            <a href="#/cv" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <!------------------------------------------------
+    ----------------------Skills---------------------
+    -------------------------------------------------->
+
+    <section class="skills" id="skills">
+        <h2 class="centering_text">My <span>Skills</span></h2>
+        <h5>fullstack react<span> &</span> node<span>.js </span>developer</h5>
+
+        <div class="skills_container">
+            <div class="content_skills">
+                <div class="skill"><img src="skills_imgs/css-96.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/html-5-96.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/sass-.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/node.js .png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/react.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/redux-.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/github.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/js2.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/Electron.js.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/express-js-80.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/Git.png" alt="" /></div>
+                <div class="skill"><img src="skills_imgs/bootstrap-96.png" alt="" /></div>
+            </div>
         </div>
     </section>
 
@@ -127,7 +152,8 @@
             </div>
 
             <div class="row">
-                <i class="fa-solid fa-code"></i>                <h3>Web devolopment</h3>
+                <i class="fa-solid fa-code"></i>
+                <h3>Web devolopment</h3>
                 <h3>clean code</h3>
                 <p>
                     Lorem ipsum dolor sit amet consadipisicing elit. Quidem unde
@@ -152,15 +178,6 @@
                     blanditiisedeligendi facere labore atque saepe delectus!
                 </p>
             </div>
-
-            <div class="row">
-                <i class="fa-solid fa-code-branch"></i>
-                <h3>version control</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consadipisicing elit. Quidem unde
-                    blanditiisedeligendi facere labore atque saepe delectus!
-                </p>
-            </div>
         </div>
     </section>
 
@@ -173,8 +190,7 @@
             <h2>My Awesome Works</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum iste
-                non sed exercitationem, eveniet omnis voluptatum doloremque numquam
-                aliquid prae molestiae dignissimos porro, odio officia!
+                non sed exercitationem, eveniet omnis voluptatum
             </p>
         </div>
 
@@ -245,9 +261,9 @@
             <div class="box">
                 <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTguPN1fVfU2PcnoA3v2nbplUGgIfIip6b_qA&usqp=CAU" />
-                    <div class="porto-details">
-                        <a href="#">Node JS Apps</a>
-                    </div>
+                <div class="porto-details">
+                    <a href="#">Node JS Apps</a>
+                </div>
             </div>
         </div>
     </section>
@@ -258,11 +274,12 @@
 
     <section class="contact" id="contact">
         <div class="contact-form">
-            <h2>Hire <span>Me</span></h2>
+            <h2>Let<span>'s</span> Talk</h2>
+            <h5>I am available for freelance work, contact with me via :</h5>
             <p>
-                I am available for freelance work, contact with me via phone:<br />
-                <span>Phone:</span> 00249917444422 / 00249123420825<br />
-                <span>Email:</span> mohammedalhassannumair@hotmail.com
+                <span>Phone:</span> 00249123420825<br />
+                <span>Whatsapp: </span> 00249917444422<br />
+                <span>Email: </span> mohammedalhassannumair@hotmail.com
             </p>
             <form action="">
                 <input type="text" placeholder="Your Name" required />
@@ -272,7 +289,6 @@
                 <input type="submit" value="submit" class="send" />
             </form>
         </div>
-
         <div class="contact-img">
             <img src="./imgs/Business ethics-amico.svg" alt="" />
         </div>
@@ -283,24 +299,24 @@
     -------------------------------------------------->
 
     <section class="footer" id="footer">
-        <p>Copyright <span>Md H Numear</span></p>
-        <div id="footer-social" >
-            <a href="https://web.facebook.com/m.h.numair" target="_blank" >
-                <img class="social-img" src="social/facebook2.png" alt="facebook icon">
+        <p>© 2022 Copyright: <span>Md H Numear</span></p>
+
+        <div id="footer-social">
+            <a href="https://web.facebook.com/m.h.numair" target="_blank">
+                <img class="social-img" src="social/facebook2.png" alt="facebook icon" />
             </a>
 
-            <a href="https://www.linkedin.com/in/mohammed-h-nimear-220413239/" target="_blank" >
-               <img src="social/linkedin2.png"/>
+            <a href="https://www.linkedin.com/in/mohammed-h-nimear-220413239/" target="_blank">
+                <img src="social/linkedin2.png" />
             </a>
 
             <a href="https://twitter.com/numair_h" target="_blank">
-                <img class="social-img" src="social/twitter_4.png" alt="twitter icon" > 
+                <img class="social-img" src="social/twitter_4.png" alt="twitter icon" />
             </a>
 
             <a href="https://github.com/mohammedNimear" target="_blank">
-                <img class="social-img" src="social/github.png" alt="#">
+                <img class="social-img" src="social/github.png" alt="#" />
             </a>
-        
         </div>
     </section>
 
