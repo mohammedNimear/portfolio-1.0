@@ -11,12 +11,12 @@
 :root{
    --bg-color: rgb(16, 16, 16);
    --second-bg-color: #191919;
-   --text-color: #fff;
+   --text-color: #aaa;
    --second-color: #c6c9d8bf;
    --main-color: #f9004d;
    --big-font: 5.3rem;
    --h2-font: 4.2rem;
-   --p-font: 1.1rem;
+   --p-font: 1.3rem;
 }
 
 html {
@@ -54,6 +54,12 @@ header{
     letter-spacing: 1px;
 }
 
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 .navbar{
     display: flex;
@@ -145,9 +151,6 @@ section{
 .home{
     width: 100%;
     height: 100vh;
-    /* background: url(../imgs/digital-art.png); */
-    background-size: cover;
-    background-position: center;
     position: relative;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -244,7 +247,7 @@ span{
     letter-spacing: 1px;
     line-height: 28px;
     max-width: 590px;
-    font-size: var(--p-font);
+    font-size: 1.2rem;
     margin-bottom: 45px;
 }
 
@@ -265,8 +268,43 @@ span{
     background: transparent;
 }
 
+
 /*---------------------------------------------------
----------------------skills---------------------
+---------------------banner-one---------------------
+-------------------------------------------------- */
+
+.banner-one {
+    width: 100%;
+    height: 60vh;
+    background-color: #868686;
+    padding: 0;
+}
+
+.banner_one_img {
+    position: relative;
+
+    width:100%;
+    height: 100%;
+    background-image: url(../imgs/banar_1.jpg);
+    background-size: cover;
+    background-position: center; 
+    transition: 0.8s;
+}
+
+.banner_one_img:hover {
+    transform: scale(1);
+}
+
+.banner_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #230511bb;
+    overflow: hidden;
+
+}
+
+/*---------------------------------------------------
+---------------------skills--------------------------
 -------------------------------------------------- */
 
 .skills{
@@ -275,11 +313,9 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    border-top: 5px solid var(--second-color);
-     gap: 1rem;
-        
+    gap: 1rem;
     height: auto;
+    margin: 0 auto;
 }
 
 .skills h2 {
@@ -298,7 +334,7 @@ span{
     background: var(--second-bg-color);
     display: flex;
     align-items: center;
-    justify-content:space-between ;
+    justify-content:center;
         
 
 }
@@ -315,7 +351,7 @@ span{
  /**/
 
 .skill {
-    height: 120px;
+    height: 110px;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -338,6 +374,8 @@ span{
 
 .services{
     background: var(--bg-color);
+    text-transform: capitalize;
+
 }
 
 .center{
@@ -349,7 +387,7 @@ span{
     margin-bottom: 15px;
 }
 
-center p{
+.center p{
     color: var(--second-color);
     letter-spacing: 1px;
     line-height: 28px;
@@ -404,6 +442,8 @@ center p{
 
 .portfolio{
     background: var(--second-bg-color);
+    text-transform: capitalize;
+
 }
 
 .portfolio-content{
@@ -659,10 +699,16 @@ header.stiky #menu.active span{
 
 @media (max-width: 990px){
     .home{
-        height: 85vh;
+        height: 95vh;
     }
 
     .home-text h1{
+        margin: 4rem 0;
+        font-size: var(--h2-font);
+
+    }
+
+    .home-text h4{
         margin-bottom: 4rem;
     }
 
