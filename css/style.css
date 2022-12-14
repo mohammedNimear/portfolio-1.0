@@ -276,8 +276,11 @@ span{
 .banner-one {
     width: 100%;
     height: 60vh;
+    margin: 0 auto;
     background-color: #868686;
     padding: 0;
+    overflow: hidden;
+
 }
 
 .banner_one_img {
@@ -292,14 +295,13 @@ span{
 }
 
 .banner_one_img:hover {
-    transform: scale(1);
+    transform: scale(1.03);
 }
 
 .banner_overlay {
     width: 100%;
     height: 100%;
     background-color: #230511bb;
-    overflow: hidden;
 
 }
 
@@ -593,6 +595,8 @@ form textarea{
     font-size: 18px;
     color: var(--second-color);
     letter-spacing: 1px;
+    padding: 10px 15%;
+
 }
 
 #footer-social{
@@ -681,6 +685,10 @@ header.stiky #menu.active span{
     }
 
     section{
+        
+        transition: .2s;
+    }
+    footer{
         padding: 80px 4%;
         transition: .2s;
     }
